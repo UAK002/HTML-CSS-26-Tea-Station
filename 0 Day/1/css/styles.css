@@ -158,10 +158,3 @@ Header
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
-
-/* 
-
- & TT uppercase & BG --primary & color --white & P 0.5rems 1rem & LS --spacing & display inline-block & FW 700 & transistion --transistion & FZ 1rem & border none & cursor pointer & box-shadow 0 1px 3px rgb(0,0,0, 0.2)
-- T .btn: hover 2(C,B ) & color --primary & BG --primary-light
-- T .banner-btn 4(O,O-o,F-z,P ) & outline 0.125rem solid --primary & outline-offset 0.25rem & FZ 1.25rem & P 1rem 1.75rem
-*/
