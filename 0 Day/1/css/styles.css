@@ -158,3 +158,61 @@ Header
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
+
+/* 
+==============
+Content divider
+==============
+*/
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
+
+/* 
+==============
+Content divider
+==============
+*/
+/* 
+- index.css > comment Skills section
+- T .skills & BG --gray-10
+- T .skill 3(P, T-a, T )& P 2.5rem 0 & TA center & transition
+- T .skill-icon 5(F-s, M-b, T, D, C )& FZ 2.5rem & MB 1.25rem & transition --transition & display inline- block & color –primary
+- T .skill-text 3(C,M-w, M)& color --gray-5 & max-width 17rem
+- T .skill-text & margin 0 auto
+- T .skill:hover 2(B, B-s)& BG --white & box shadow 0 2px var(--clr-primary)
+- T .skill:hover .skill-icon & transform translateY(-5px)
+*/
+.skills {
+  background: var(--clr-grey-10);
+}
+.skill {
+  padding: 2.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--clr-primary);
+}
+.skill-text {
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+.skill:hover {
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
