@@ -158,6 +158,12 @@ Header
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  clear: both;
+  display: table;
+}
 /* 
 ==============
 Content divider
@@ -215,4 +221,15 @@ Skills Section
 }
 .skill:hover .skill-icon {
   transform: translateY(-5px);
+}
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
 }
