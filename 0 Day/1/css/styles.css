@@ -118,13 +118,6 @@ More Global Styles
   background: var(--clr-primary-light);
 }
 
-.clearfix::after,
-.clearfix::before {
-  content: '';
-  clear: both;
-  display: table;
-}
-
 /* 
 ==============
 Header
@@ -183,7 +176,7 @@ Content divider
 
 /* 
 ==============
-Content divider
+Skill section
 ==============
 */
 /* 
@@ -232,7 +225,6 @@ Content divider
 }
 @media screen and (min-width: 1200px) {
   .skill {
-    float: left;
     width: 25%;
   }
 }
