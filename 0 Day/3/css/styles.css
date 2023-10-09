@@ -316,25 +316,6 @@ Products Section
   height: 17rem;
   object-fit: cover;
 }
-/* 
-- styles.css > comment Products section
-- T .products ( B)& BG --grey-10
-- T .products article (P) & P 2rem 0
-- T .product-text (CM )& color --gray-5 & max-width 26rem
-
-- T .product-img (BMHO ) & BRAD --radius & MB 2rem & H 17rem & object-fit cover
-- T .product-price (C ) & color --clr-primary
-- T .product ( M)& MB 2rem
-
-- @MQ min-width 768px T .product (FW) & float left & W 50%
-- @MQ min-width 768px T .product (P) & padding-right 2rem
-- @MQ min-width 992px T .product (W) & W 33.3%
-
-- @MQ min-width 1200px T .product-info (FW) & float left & W 30%
-- @MQ min-width 1200px T product-inventory (FW )& float left & W 70%
-
-- @MQ min-width 1200px T product (MP )& MB 0 & P 0 1rem
-*/
 .product-price {
   color: var(--clr-primary);
 }
