@@ -143,6 +143,22 @@ More Global Styles
   }
 }
 
+/* 
+==============
+Navbar
+==============
+*/
+.nav-btn {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  z-index: 1;
+  cursor: pointer;
+  /* animation */
+}
+
 /* navbar */
 
 .navbar {
@@ -199,22 +215,6 @@ More Global Styles
     width: 30vw;
     max-width: 20rem;
   }
-}
-
-/* 
-==============
-Header
-==============
-*/
-.nav-btn {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  font-size: 2.5rem;
-  color: var(--clr-primary);
-  z-index: 1;
-  cursor: pointer;
-  /* animation */
 }
 
 /* 
