@@ -130,6 +130,74 @@ More Global CSS
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
 }
+
+/* 
+===============================
+Navbar
+===============================
+*/
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 /* 
 ===============================
 Navbar
@@ -145,6 +213,7 @@ Navbar
   z-index: 1;
   cursor: pointer;
   /* animation */
+  animation: bounce 2s ease infinite;
 }
 
 .navbar {
@@ -157,9 +226,12 @@ Navbar
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   z-index: 2;
   /* hide nav */
+  transform: translateX(-100%);
+  transition: var(--transition);
 }
 
 .showNav {
+  transform: translate(0);
 }
 
 .nav-header {
@@ -226,6 +298,7 @@ Header Section
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
   /* animation */
+  animation: slideFromRight 5s ease-in-out 1;
 }
 .banner h1 {
   color: var(--clr-white);
@@ -233,12 +306,14 @@ Header Section
   margin-top: 1.25rem;
   margin-bottom: 2rem;
   /* animation */
+  animation: slideFromLeft 5s ease-in-out 1;
 }
 .banner-btn {
   outline: 0.125rem solid var(--clr-primary);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  animation: show 5s linear 1;
 }
 /* 
 ===============================
